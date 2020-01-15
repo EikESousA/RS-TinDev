@@ -4,7 +4,7 @@
 
 # Semana Omnistack 8.0 - TinDev - 05/08/2019 - 11/08/2019
 
-Curso da Semana Oministack 8.0 realizado pela RocketSeat (https://rocketseat.com.br/).
+![alt text](https://i.imgur.com/rrToM6L.png?2) Curso da Semana Oministack 8.0 realizado pela RocketSeat (https://rocketseat.com.br/).
 
 ## 01) Objetivo
 
