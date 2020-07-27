@@ -2,6 +2,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 
+require("dotenv/config");
+
 const routes = require("./routes.js");
 
 const app = express();
@@ -10,7 +12,7 @@ const io = require("socket.io")(server);
 
 const connectedUsers = {};
 
-io.on("connection", socket => {
+io.on("connection", (socket) => {
   const { user } = socket.handshake.query;
   connectedUsers[user] = socket.id;
   console.log("Client connectet:", user);
@@ -18,7 +20,7 @@ io.on("connection", socket => {
 
 mongoose.connect("mongodb+srv://...", {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
 });
 
 app.use((req, res, next) => {
